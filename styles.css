@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.header-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+}
+.animation-h{
+    display: flex;
+    align-items: center;
+}
+
+.animation{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.header-home h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.navbar ul{
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+    gap: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    border-bottom: 1px solid #222;
+}
+.navbar a:hover{
+    background-color: yellow;
+}
+
+.from{
+    text-align: center;
+}
+.ul-from{
+    list-style: inside;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.get-courses{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: burlywood;
+    padding: 15px 20px 15px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.get-courses:hover{
+    background-color: white;
+    border: 1px solid #222;
+    color: maroon;
+}
+
+
+.program h2{
+    background-color: rgb(181, 197, 89);
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+.time-table{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 30px;
+}
+.time-table th,td{
+    border: 1px solid #111;
+}
+.time-table .days,th{
+    background-color: yellowgreen;
+}
+.time-table td,.days{
+    padding: 10px;
+}
+.time-table td{
+    background-color: rgb(248, 248, 123);
+}
+.days{
+    font-weight: bold;
+}
+
+@media(max-width:1100px) {
+    .header-home{
+        flex-direction: column;
+    }
+
+
+    .time-table{
+        font-size: 11px;
+        padding: 2px;
+    }
+}
+
+@media(max-width:600px) {
+    .header-home{
+        flex-direction: column;
+        align-items: center;
+    }
+    .animation{
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .time-table{
+        font-size: 11px;
+        padding: 2px;
+    }
+    
+}
