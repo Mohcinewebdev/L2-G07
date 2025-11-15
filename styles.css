@@ -127,6 +127,8 @@ body{
     .time-table{
         font-size: 11px;
         padding: 2px;
+    }
+    .time-table-div{
         overflow-x: scroll;
     }
     
