@@ -72,6 +72,25 @@ body{
     color: maroon;
 }
 
+.quiz{
+    text-align: center;
+    margin-top: 50px;
+}
+.quiz h2{
+    color: yellow;
+}
+.quiz-table{
+    width: 90%;
+    margin: auto;
+}
+.quiz-table th,td{
+    border: 1px solid #111;
+    padding: 10px;
+}
+.quiz-table th{
+    background-color: yellow;
+}
+
 
 .program h2{
     background-color: rgb(181, 197, 89);
@@ -277,6 +296,7 @@ body{
     text-shadow: 2px 3px 3px #333;
 }
 .phonetic-courses{
+    margin-bottom: 30px;
     text-align: center;
 }
 .phonetic-course{
@@ -358,6 +378,35 @@ body{
 #written-course a{
     color: #111;
 }
+#civ-header, #civ-course{
+    background-color: rgb(192, 45, 45);
+}
+#civ-course-h1, #civ-course-h2{
+    color: rgb(194, 1, 1);
+}
+#civ-nav-a{
+    color: rgb(192, 45, 45);
+}
+#civ-course a{
+    color: rgb(117, 0, 0);
+}
+
+.abed-youtube{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.abed-youtube a{
+    text-decoration: none;
+    color: rgb(207, 0, 0);
+}
+.youtube-icon{
+    width: 200px;
+    height: 120px;
+    padding: 0;
+    margin: 0;
+}
 
 .footer{
     text-align: center;
@@ -420,6 +469,14 @@ body{
         height: 80px;
     }
 
+    .quiz{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .quiz-table{
+        overflow-x: scroll;
+    }
+
 
     .time-table{
         font-size: 11px;
@@ -450,7 +507,7 @@ body{
 
 
     .phonetic-course{
-        width: 90%;
+        width: 85%;
         margin-bottom: 30px;
     }
 }
