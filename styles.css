@@ -384,6 +384,18 @@ body{
 #civ-course a{
     color: rgb(117, 0, 0);
 }
+#lit-header, #lit-course{
+    background-color: rgb(126, 44, 6);
+}
+#lit-course-h1, #lit-course-h2{
+    color: rgb(143, 46, 1);
+}
+#lit-nav-a{
+    color: rgb(126, 44, 6);
+}
+#lit-course a{
+    color: rgb(77, 24, 0);
+}
 
 .abed-youtube{
     text-align: center;
