@@ -522,4 +522,9 @@ body{
         width: 85%;
         margin-bottom: 30px;
     }
+
+    .youtube-icon{
+        width: 130px;
+        height: 70px;
+    }
 }
