@@ -52,6 +52,9 @@ body{
 .from{
     text-align: center;
 }
+.h-from{
+    color: #111;
+}
 .ul-from{
     list-style: inside;
     line-height: 30px;
@@ -93,6 +96,7 @@ body{
 
 
 .program h2{
+    color: #111;
     background-color: rgb(181, 197, 89);
     padding: 20px;
     text-align: center;
@@ -136,35 +140,44 @@ body{
     box-shadow: 2px 5px 12px #333;
     text-align: center;
     width: 300px;
+    height: 350px;
     border-radius: 10px;
-    background-color: rgb(183, 233, 47);
+    background-color: burlywood;
 }
 .teacher h2{
-    color: darkred;
+    color: white;
 }
 .p-teachers{
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 1.2rem;
+}
+.teacher p{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .teacher img{
     margin-top: 5px;
     width: 100px;
     height: 100px;
 }
-.email-teachers{
-    font-size: 1.2rem;
-    padding: 8px;
-    margin-top: 40px;
+.email-teacher{
+    display: flex;
+    justify-content: center;
 }
-.email-teachers a{
+.teacher a{
+    font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     border-radius: 30px;
     padding: 10px;
     background-color: antiquewhite;
     color: #111;
+    width: 80%;
+    margin-bottom: 10px;
     transition: 0.3s;
 }
-.email-teachers a:hover{
+.teacher a:hover{
     background-color: rgb(240, 240, 138);
     box-shadow: 2px 6px 16px #222;
 }
@@ -192,6 +205,7 @@ body{
     box-shadow: 2px 6px 20px #222;
 }
 .course h2{
+    color: #222;
     padding: 20px 5px;
     text-transform: uppercase;
 }
@@ -464,8 +478,10 @@ body{
         padding: 2px;
     }
 
-
-    
+    .teacher{
+        height: auto;
+    }
+ 
     .course{
         width: 45%;
     }
