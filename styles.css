@@ -49,13 +49,22 @@ body{
     background-color: yellow;
 }
 
+.from-bg{
+    background: url(./pictures/ub2-image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .from{
     text-align: center;
+    background-color: #00000075;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 .h-from{
-    color: #111;
+    color: #fff;
 }
 .ul-from{
+    color: rgb(250, 250, 164);
     list-style: inside;
     line-height: 30px;
     margin-bottom: 50px;
@@ -77,10 +86,10 @@ body{
 
 .quiz{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .quiz h2{
-    color: yellow;
+    color: black;
 }
 .quiz-table{
     width: 90%;
