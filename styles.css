@@ -5,6 +5,10 @@ body{
     font-family: Verdana, Tahoma, sans-serif;
 }
 
+.hidden{
+    display: none;
+}
+
 .header-home{
     display: flex;
     justify-content: space-between;
@@ -60,6 +64,7 @@ body{
     padding-bottom: 50px;
 }
 .h-from{
+    text-align: center;
     color: #fff;
     font-size: 2rem;
 }
@@ -318,10 +323,25 @@ body{
     background-color: #f9f9f9;
     box-shadow: 2px 6px 8px #222;
 }
-.phonetics-div-h h1, h2{
+.phonetics-div-h h1{
     text-align: center;
     color: rgb(190, 0, 63);
     text-shadow: 2px 3px 3px #333;
+}
+.phonetics-div-h h2{
+    text-align: center;
+    color: rgb(190, 0, 63);
+    cursor: pointer;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(255, 237, 240);
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px black;
+    transition: 0.3s;
+}
+.phonetics-div-h h2:hover{
+    box-shadow: 2px 6px 10px black;
 }
 .phonetic-courses{
     margin-bottom: 30px;
@@ -596,6 +616,10 @@ body{
         width: 85%;
         margin-bottom: 30px;
     }
+
+    .phonetics-div-h h2{
+    width: 85%;
+}
 
     .youtube-icon{
         width: 130px;
