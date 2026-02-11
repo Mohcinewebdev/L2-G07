@@ -1,14 +1,16 @@
-let semBtn = document.querySelector(".sem-btn");
-let courses = document.querySelector(".phonetic-courses");
+document.querySelectorAll(".sem-btn").forEach((btn) => {
 
+  btn.addEventListener("click", () => {
 
-semBtn.addEventListener("click", () => {
-  if (courses.classList.contains("hidden")) {
-    courses.classList.remove("hidden");
-    semBtn.textContent = "Hide 1st Semester 🔺";
-  } else {
-    courses.classList.add("hidden");
-    semBtn.textContent = "Show 1st Semester 🔻";
-  }
+    const courses = btn.parentElement.nextElementSibling;
+    const arrow = btn.querySelector(".arrow");
+
+    courses.classList.toggle("hidden");
+
+    arrow.textContent =
+      courses.classList.contains("hidden") ? "🔻" : "🔺";
+
+  });
+
 });
 

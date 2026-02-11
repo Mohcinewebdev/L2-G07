@@ -5,8 +5,9 @@ body{
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-.hidden{
-    display: none;
+.phonetic-courses.hidden {
+  max-height: 0;
+  opacity: 0;
 }
 
 .header-home{
@@ -346,6 +347,10 @@ body{
 .phonetic-courses{
     margin-bottom: 30px;
     text-align: center;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+    opacity: 1;
 }
 .phonetic-course{
     background-color: rgb(255, 114, 192);
