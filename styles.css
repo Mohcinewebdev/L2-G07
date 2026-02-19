@@ -79,8 +79,15 @@ body{
     margin: auto;
     margin-bottom: 50px;
     width: fit-content;
-    border-bottom: 3px solid #fff;
-    
+}
+.ul-from::after{
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    background-color: #fff;
+    height: 2px;
 }
 .get-courses{
     text-decoration: none;
@@ -629,6 +636,15 @@ body{
         width: 85%;
         margin-bottom: 30px;
     }
+
+    .phonetics-nav img{
+    width: 60px;
+    height: 60px;
+}
+.phonetics-nav a{
+    padding: 8px;
+    font-size: 1rem;
+}
 
     .phonetics-div-h h2{
     width: 85%;
