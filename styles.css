@@ -14,7 +14,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: rgb(22, 70, 92);
+    color: #fff;
     top: 0;
     z-index: 1000;
     position: sticky;
@@ -43,15 +44,16 @@ body{
 }
 .navbar a{
     text-decoration: none;
-    color: black;
+    color: #fff;
     padding: 10px;
     font-weight: bold;
     border-radius: 8px;
     transition: 0.3s;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #fff;
 }
 .navbar a:hover{
-    background-color: yellow;
+    background-color: rgb(44, 112, 143);
+    border-bottom: rgb(44, 112, 143);
 }
 
 .from-bg{
@@ -107,10 +109,14 @@ body{
     border: 1px solid #222;
     color: maroon;
 }
-
+.quizzes{
+    display: flex;
+    justify-content: center;
+}
 .quiz{
     text-align: center;
     margin-top: 30px;
+    width: 100%;
 }
 .quiz h2{
     color: black;
@@ -124,13 +130,14 @@ body{
     padding: 10px;
 }
 .quiz-table th{
-    background-color: yellow;
+    color: #fff;
+    background-color: rgb(4, 56, 80);
 }
 
 
 .program h2{
-    color: #111;
-    background-color: rgb(181, 197, 89);
+    color: #fff;
+    background-color: rgb(4, 66, 80);
     padding: 20px;
     text-align: center;
     margin-top: 60px;
@@ -145,13 +152,13 @@ body{
     border: 1px solid #111;
 }
 .time-table .days,th{
-    background-color: yellowgreen;
+    background-color: rgb(112, 209, 209);
 }
 .time-table td,.days{
     padding: 10px;
 }
 .time-table td{
-    background-color: rgb(248, 248, 123);
+    background-color: rgb(183, 212, 212);
 }
 .days{
     font-weight: bold;
@@ -164,7 +171,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-right: 10px;
     margin-left: 10px;
     gap: 20px;
@@ -178,6 +185,7 @@ body{
     background-color: burlywood;
 }
 .teacher h2{
+    text-shadow: 5px 2px 5px black;
     color: white;
 }
 .p-teachers{
@@ -217,6 +225,7 @@ body{
 
 .courses{
     margin-top: 30px;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -509,7 +518,7 @@ body{
 
 .footer{
     text-align: center;
-    background-color: rgb(75, 35, 35);
+    background-color: rgb(4, 56, 80);
     color: white;
     margin-bottom: 0;
     padding: 10px;
@@ -522,7 +531,7 @@ body{
     margin-top: 40px;
 }
 .contact-me h2{
-    color: yellow;
+    color: rgb(255, 255, 167);
 }
 .contact ul{
     display: flex;
@@ -543,7 +552,7 @@ body{
     text-decoration: none;
 }
 .phone-number a{
-    color: yellow;
+    color: rgb(255, 255, 167);
 }
 
 @media(max-width:1100px) {
@@ -551,6 +560,10 @@ body{
         flex-direction: column;
     }
 
+    .quizzes{
+    flex-direction:column;
+    align-items: center;
+    }
 
     .time-table{
         font-size: 11px;
@@ -595,9 +608,15 @@ body{
         font-size: 1.4rem;
     }
 
+    .quizzes{
+    flex-direction:column;
+    align-items: center;
+    }
+
     .quiz{
         font-size: 14px;
         padding: 5px;
+        width: 90%;
     }
     .quiz-table{
         overflow-x: scroll;
